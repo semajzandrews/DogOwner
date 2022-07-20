@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        ZStack {
+            Color.black
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .frame(width: 1000, height: 400)
+                .rotationEffect(.degrees(135))
+        }
+        .ignoresSafeArea()
     }
 }
 
