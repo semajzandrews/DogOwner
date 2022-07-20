@@ -48,8 +48,38 @@ struct ContentView: View {
                         Text("Password")
                             .foregroundColor(.white)
                             .bold()
-
-                                            }
+                }
+                
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
+                
+                Button {
+                    // MARK: SIGN UP BUTTON
+                    
+                } label : {
+                    Text("Sign Up")
+                        .bold()
+                        .frame(width: 200, height: 40)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(.linearGradient(colors: [.purple, .blue], startPoint: .top, endPoint: .bottomTrailing))
+                        )
+                        .foregroundColor(.white)
+                }
+                .padding(.top)
+                .offset(y: 110)
+                
+                Button {
+                    // MARK: ALREADY HAVE AN ACCOUNT BUTTON
+                } label: {
+                    Text("Already have an account? Login")
+                        .bold()
+                        .foregroundColor(.white)
+                }
+                .padding(.top)
+                .offset(y: 110)
+                
             }
             .frame(width: 350)
         }
