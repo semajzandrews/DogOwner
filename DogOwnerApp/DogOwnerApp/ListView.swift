@@ -20,7 +20,7 @@ struct ListView: View {
             .navigationBarItems(trailing: Button(action: {
                 
             }, label: {
-                
+                Image(systemName: "plus")
             }))
         }
     }
@@ -29,5 +29,6 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+            .environmentObject(DataManager())
     }
 }

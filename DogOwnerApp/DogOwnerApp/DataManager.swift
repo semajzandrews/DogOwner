@@ -29,8 +29,8 @@ class DataManager: ObservableObject {
                 for document in snapshot.documents {
                     let data = document.data()
                     
-                    let id = data["id"] as? String ?? ""
-                    let breed = data["breed"] as? String ?? ""
+                    let breed = data["breed"] as? String ?? "1"
+                    let id = data["id"] as? String ?? "2"
                     
                     let dog = Dog(id: id, breed: breed)
                     self.dogs.append(dog)
