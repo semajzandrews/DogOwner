@@ -12,9 +12,19 @@ struct ContentView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @State private var userIsLoggedIn = false
     
     var body: some View {
+        if userIsLoggedIn {
+            // navigate forward
+            ListView()
+        } else {
+            content
+        }
 
+    }
+    
+    var content: some View {
         ZStack {
             Color.black
             RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -85,6 +95,13 @@ struct ContentView: View {
                 
             }
             .frame(width: 350)
+            .onAppear {
+                Auth.auth().addStateDidChangeListener { auth, user in
+                    if user != nil {
+                        userIsLoggedIn.toggle()
+                    }
+                }
+            }
         }
         .ignoresSafeArea()
     }
