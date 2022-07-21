@@ -17,6 +17,7 @@
 		73B322B82888D5C0003DEC72 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B322B72888D5C0003DEC72 /* ListView.swift */; };
 		73B322BA2888D5E9003DEC72 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B322B92888D5E9003DEC72 /* Dog.swift */; };
 		73B322BC2888D7E8003DEC72 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B322BB2888D7E8003DEC72 /* DataManager.swift */; };
+		73CCF8302889796300C657FE /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CCF82F2889796300C657FE /* NewDogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		73B322B72888D5C0003DEC72 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		73B322B92888D5E9003DEC72 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		73B322BB2888D7E8003DEC72 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		73CCF82F2889796300C657FE /* NewDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				73B322A22888BF4E003DEC72 /* DogOwnerAppApp.swift */,
 				73B322A42888BF4E003DEC72 /* ContentView.swift */,
+				73CCF82F2889796300C657FE /* NewDogView.swift */,
 				73B322BB2888D7E8003DEC72 /* DataManager.swift */,
 				73B322B72888D5C0003DEC72 /* ListView.swift */,
 				73B322B92888D5E9003DEC72 /* Dog.swift */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CCF8302889796300C657FE /* NewDogView.swift in Sources */,
 				73B322A52888BF4E003DEC72 /* ContentView.swift in Sources */,
 				73B322BC2888D7E8003DEC72 /* DataManager.swift in Sources */,
 				73B322A32888BF4E003DEC72 /* DogOwnerAppApp.swift in Sources */,
